@@ -4,14 +4,14 @@
 buildarch=4
 
 pkgbase=linux-odroid-xu3
-_commit=9cd242bb0b98000ca795086a08cb577669514028
-_srcname=linux-${_commit}
+_commit=6ad91098731467228513597d84cc53aa332b4344
+_srcname=linux-odroid-${_commit}
 _kernelname=${pkgbase#linux}
 _desc="ODROID-XU3/XU4/HC1"
-pkgver=4.14.312
+pkgver=4.14.336
 pkgrel=1
 arch=('armv7h')
-url="https://github.com/kyak/linux"
+url="https://github.com/kyak/linux-odroid"
 license=('GPL2')
 makedepends=('xmlto' 'docbook-xsl' 'kmod' 'inetutils' 'bc' 'git')
 options=('!strip')
@@ -24,7 +24,7 @@ source=("https://github.com/kyak/linux/archive/${_commit}.tar.gz"
         'config'
         'linux.preset'
         '99-linux.hook')
-md5sums=('0f1ef7ed66015ebdb1f84803364595e7'
+md5sums=('358c051619355e1c0885a7d1c1428055'
          '20bf3136f2725be5b6a2eb7a5a8682bf'
          '87005df895a02680e36f18bc55fb90eb'
          '9f3d8e15ec0f750e9455bd3741a89330'
